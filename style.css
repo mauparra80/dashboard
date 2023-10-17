@@ -40,11 +40,13 @@ body{
     color: white;
     background-color: var(--color-blue);
     padding: 15px;
-}
-
-.left-content *
-{
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    align-items: center;
+    align-content: start;
+    grid-auto-flow: row;
+    gap: 20px;
 }
 
 
@@ -54,27 +56,13 @@ body{
     object-fit: cover;
 }
 
-.left-content h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
 
-.left-content .general{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
-.left-content h2{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
-.left-content .left-tabs img{
+.left-content .tab{
     height: 30px;
+    align-self: center;
+    justify-self: center;
 }
 
 .top-content{
