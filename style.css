@@ -168,23 +168,91 @@ body{
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: var(--color-gray);
+    gap: 10px;
 }
+
+.middle-content .content-title{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
 
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 10px 20px 20px 20px; 
 }
 
 .main-content .cards .card{
     background: white;
+    border-radius: 10px;
+    border-left: 10px solid var(--color-orange);
+    padding: 20px;
+    display: grid;
+    
 }
 
-.sidebar-right .announcements .announce{
+.main-content .cards .card p{
+    color: rgb(77, 77, 77);
+    font-size: 1em
+}
+
+.main-content .share-smbls{
+    display: flex;
+    gap: 10px;
+    align-self: end;
+    justify-self: end;
+    align-items: center;
+    justify-content: end;
+}
+
+/* .sidebar-right .container{
+    display: grid;
+    margin: 20px;
+    grid-template-rows: 1fr 1fr;
+} */
+
+.sidebar-right .content-title{
+    margin: 20px 5px 10px 10px;
+}
+
+
+.sidebar-right .announcements, .trending {
     background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.sidebar-right .announcements .announce:not(:first-child){
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid silver;
+}
+
+.sidebar-right .trending {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto;
+    align-items: center;
 }
 
 .sidebar-right .trending .trendtag{
-    background-color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar-right .trending .tag-title{
+    display: flex;
+    flex-direction: column ;
+    
+}
+
+.sidebar-right .trending git .trendtag .pic1{
+    background-color: var(--color-blue);
 }
 
